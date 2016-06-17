@@ -20,7 +20,8 @@ public class RefreshDemoServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("<b>页面在5s后跳转</b>");
-		response.setHeader("location", "/servletdemo/response/login.html");
+//		response.setHeader("location", "/servletdemo/response/login.html");
+		response.sendRedirect("/servletdemo/response/login.html");
 		
 		out.flush();
 		out.close();

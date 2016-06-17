@@ -98,7 +98,7 @@
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>RefreshDemoServlet</servlet-name>
-    <url-pattern>refreshdemoservlet</url-pattern>
+    <url-pattern>/refreshdemoservlet</url-pattern>
   </servlet-mapping>
 
 </web-app>
