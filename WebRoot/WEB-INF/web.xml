@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    
+    <context-param>
+    	<param-name>param_context</param-name>
+    	<param-value>this is my context param</param-value>
+    </context-param>
+  <servlet>
+
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.FirstServlet</servlet-class>
+    <init-param>
+    	<param-name>param_info</param-name>
+    	<param-value>this is my param</param-value>
+    </init-param>
+    <!-- 设置初始化的优先级 优先级越小 先初始化 -->
+    <load-on-startup>2</load-on-startup>
+    
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDemo</servlet-name>
+    <servlet-class>com.buynow.servlet.ServletDemo</servlet-class>
+    
+  </servlet>
+  <servlet>
+    <servlet-name>FilePathServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.FilePathServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HttpResponseServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.HttpResponseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResponseDemoServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.ResponseDemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.buynow.response.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RefreshDemoServlet</servlet-name>
+    <servlet-class>com.buynow.response.RefreshDemoServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/firstservlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 后缀名匹配 不能以斜线开头 -->
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+ 
+
+ 
+  
+  <servlet-mapping>
+    <servlet-name>ServletDemo</servlet-name>
+    <url-pattern>/servletdemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilePathServlet</servlet-name>
+    <url-pattern>/filepathservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HttpResponseServlet</servlet-name>
+    <url-pattern>/httpresponseservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/refreshservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemoServlet</servlet-name>
+    <url-pattern>/responsedemoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshDemoServlet</servlet-name>
+    <url-pattern>refreshdemoservlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
