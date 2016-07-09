@@ -50,6 +50,26 @@
     <servlet-name>RefreshDemoServlet</servlet-name>
     <servlet-class>com.buynow.response.RefreshDemoServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>OutputDemoServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.OutputDemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.CheckCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginCheckCodeServlet</servlet-name>
+    <servlet-class>com.buynow.servlet.LoginCheckCodeServlet</servlet-class>
+  </servlet>
+
+
+
+
 
 
 
@@ -99,6 +119,22 @@
   <servlet-mapping>
     <servlet-name>RefreshDemoServlet</servlet-name>
     <url-pattern>/refreshdemoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OutputDemoServlet</servlet-name>
+    <url-pattern>/outputdemoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/downloadservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <url-pattern>/checkcodeservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginCheckCodeServlet</servlet-name>
+    <url-pattern>/logincheckcodeservlet</url-pattern>
   </servlet-mapping>
 
 </web-app>
