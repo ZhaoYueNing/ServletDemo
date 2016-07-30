@@ -66,14 +66,11 @@
     <servlet-name>LoginCheckCodeServlet</servlet-name>
     <servlet-class>com.buynow.servlet.LoginCheckCodeServlet</servlet-class>
   </servlet>
-<<<<<<< HEAD
   <servlet>
     <servlet-name>DemoServlet</servlet-name>
     <servlet-class>com.buynow.servlet.DemoServlet</servlet-class>
   </servlet>
 
-=======
->>>>>>> f0443aba19ef9750860f9dcd5886f8e31e1b4442
 
 
 
@@ -144,12 +141,9 @@
     <servlet-name>LoginCheckCodeServlet</servlet-name>
     <url-pattern>/logincheckcodeservlet</url-pattern>
   </servlet-mapping>
-<<<<<<< HEAD
   <servlet-mapping>
     <servlet-name>DemoServlet</servlet-name>
     <url-pattern>/demoservlet</url-pattern>
   </servlet-mapping>
-=======
->>>>>>> f0443aba19ef9750860f9dcd5886f8e31e1b4442
 
 </web-app>
