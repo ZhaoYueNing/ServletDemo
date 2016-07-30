@@ -70,6 +70,11 @@
     <servlet-name>DemoServlet</servlet-name>
     <servlet-class>com.buynow.servlet.DemoServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>SaveCookieServlet</servlet-name>
+    <servlet-class>com.buynow.cookies.SaveCookieServlet</servlet-class>
+  </servlet>
+
 
 
 
@@ -144,6 +149,10 @@
   <servlet-mapping>
     <servlet-name>DemoServlet</servlet-name>
     <url-pattern>/demoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveCookieServlet</servlet-name>
+    <url-pattern>/servlet/SaveCookieServlet</url-pattern>
   </servlet-mapping>
 
 </web-app>
