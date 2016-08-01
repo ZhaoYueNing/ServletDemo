@@ -4,7 +4,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     
-    
+    <context-param>
+    	<param-name>SQL_URL</param-name>
+    	<param-value>jdbc:mysql://127.0.0.1/buynow</param-value>
+    </context-param>
+    <context-param>
+    	<param-name>MYSQL_INIT</param-name>
+    	<param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
     <context-param>
     	<param-name>param_context</param-name>
     	<param-value>this is my context param</param-value>
@@ -155,4 +162,7 @@
     <url-pattern>/servlet/SaveCookieServlet</url-pattern>
   </servlet-mapping>
 
+	<listener>
+		<listener-class>com.buynow.listener.MySessionListener</listener-class>
+	</listener>
 </web-app>
