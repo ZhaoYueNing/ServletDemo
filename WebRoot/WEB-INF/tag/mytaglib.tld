@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd">
+ <tlib-version>1.0</tlib-version>
+ <short-name>mytaglib</short-name>
+ <uri>http://mytaglib</uri>
+ <tag>
+ 	<name>hello</name>
+ 	<tag-class>com.buynow.tag.HelloTag</tag-class>
+ 	<body-content>empty</body-content>
+ </tag>
+ 
+ <tag>
+ 	<name>sql_table</name>
+ 	<tag-class>com.buynow.tag.SQLQueryTag</tag-class>
+ 	<body-content>empty</body-content>
+ 	<attribute>
+ 		<name>sql_username</name>
+ 		<required>true</required>
+ 		<fragment>true</fragment>
+ 	</attribute>
+ 	<attribute>
+ 		<name>sql_password</name>
+ 		<required>true</required>
+ 		<fragment>true</fragment>
+ 	</attribute>
+ 	<attribute>
+ 		<name>sql_connurl</name>
+ 		<required>true</required>
+ 		<fragment>true</fragment>
+ 	</attribute>
+ 	<attribute>
+ 		<name>sql_tableName</name>
+ 		<required>true</required>
+ 		<fragment>true</fragment>
+ 	</attribute>
+ </tag>
+ 
+ <tag>
+ 	<name>fragment</name>
+ 	<body-content>empty</body-content>
+ 	<tag-class>com.buynow.tag.FragmentTag</tag-class>
+ 	<attribute>
+ 		<name>fragment</name>
+ 		<required>true</required>
+ 		<fragment>true</fragment>
+ 	</attribute>
+ </tag>
+</taglib>

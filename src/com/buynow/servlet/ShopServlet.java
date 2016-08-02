@@ -41,10 +41,11 @@ public class ShopServlet extends HttpServlet {
 		 */
 		//数据库
 		Statement statement = null ;
+		Connection conn =null;
 		
 		try {
 			MysqlHelper helper = new MysqlHelper("root", "20080808", "buynow");
-			Connection conn = helper.getConnection();
+			conn = helper.getConnection();
 			statement = conn.createStatement();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -77,7 +78,13 @@ public class ShopServlet extends HttpServlet {
 		request.getSession().setAttribute("SHOP_INFO", commodityMap);
 		//跳转到结算页面
 		response.sendRedirect("/servletdemo/jsp/squareaccounts.jsp");
-		
+		try {
+			statement.close();
+			conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		out.flush();
 		out.close();
 	}
