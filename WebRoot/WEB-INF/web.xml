@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     
     <context-param>
-    	<param-name>SQL_URL</param-name>
+    	<param-name>MYSQL_URL</param-name>
     	<param-value>jdbc:mysql://127.0.0.1/buynow</param-value>
     </context-param>
     <context-param>
