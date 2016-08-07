@@ -45,6 +45,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	sql_password="20080808"
     	sql_connurl="jdbc:mysql://127.0.0.1:3306/buynow"
     	sql_tableName="commodity"/>
-  </jsp:attribute>
+  	</jsp:attribute>
   </mytag:fragment>
 </html>

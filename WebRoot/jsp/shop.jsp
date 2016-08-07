@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   <%
   	//从数据库读取商品集合
-  	MysqlHelper helper = new MysqlHelper("root", "20080808", "buynow");
+  	MysqlHelper helper = new MysqlHelper("root", "20080808", "127.0.0.1",3306,"buynow");
 	Connection conn = helper.getConnection();
 	Statement statement = conn.createStatement();
 	ResultSet set = statement.executeQuery("select * from commodity");

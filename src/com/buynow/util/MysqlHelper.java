@@ -28,7 +28,6 @@ public class MysqlHelper {
 			Class.forName(MYSQL_INIT);
 			conn=getConnection();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -42,26 +41,11 @@ public class MysqlHelper {
 				this.conn = DriverManager.getConnection(connUrl, username, password);			
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			return this.conn;			
 		}
 	}
 	
-	public static void main(String[] args) {
-		try {
-			MysqlHelper helper = new MysqlHelper("root", "20080808", "buynow");
-			Connection conn = helper.getConnection();
-			Statement statement = conn.createStatement();
-			ResultSet set = statement.executeQuery("select *   from commodity where id=1");
-			while(set.next()){
-				String name = set.getString("name");
-				System.out.println(name);
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+
 }

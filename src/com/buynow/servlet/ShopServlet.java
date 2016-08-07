@@ -44,7 +44,7 @@ public class ShopServlet extends HttpServlet {
 		Connection conn =null;
 		
 		try {
-			MysqlHelper helper = new MysqlHelper("root", "20080808", "buynow");
+			MysqlHelper helper = new MysqlHelper("root", "20080808", "127.0.0.1",3306,"buynow");
 			conn = helper.getConnection();
 			statement = conn.createStatement();
 		} catch (SQLException e) {

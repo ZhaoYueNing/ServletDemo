@@ -46,4 +46,9 @@
  		<fragment>true</fragment>
  	</attribute>
  </tag>
+ <function>
+ 	<name>addPrev</name>
+ 	<function-class>com.buynow.tag.Function</function-class>
+ 	<function-signature>java.lang.String addPrev(java.lang.String)</function-signature>
+ </function>
 </taglib>
